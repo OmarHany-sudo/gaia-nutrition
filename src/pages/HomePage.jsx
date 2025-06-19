@@ -76,7 +76,7 @@ const HomePage = () => {
             >
               <h1 className="text-4xl lg:text-6xl font-arabic-heading text-foreground mb-6 leading-tight">
                 عيش حياة صحية مع{' '}
-                <span className="text-primary">التغذية السليمة</span>
+                <span className="text-primary">Gaia Nutrition</span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 خطط تغذية متخصصة لتحسين صحتك ورفاهيتك بطريقة مستدامة مع د/ عمر محمد خلف، أخصائي التغذية العلاجية.

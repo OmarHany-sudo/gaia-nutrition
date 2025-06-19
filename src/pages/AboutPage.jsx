@@ -235,45 +235,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl lg:text-4xl font-arabic-heading text-foreground mb-4">
-              فيديو تعريفي
-            </h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-4"></div>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              تعرف على د/ عمر محمد خلف وخدماته في التغذية العلاجية
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="فيديو تعريفي - د/ عمر محمد خلف"
-                className="w-full h-full"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 text-center">

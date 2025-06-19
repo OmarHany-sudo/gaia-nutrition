@@ -96,10 +96,9 @@ const ContactPage = () => {
   ]
 
   const socialLinks = [
-    { icon: Facebook, name: 'Facebook', link: '#', color: 'hover:text-blue-600' },
-    { icon: Instagram, name: 'Instagram', link: '#', color: 'hover:text-pink-600' },
-    { icon: Twitter, name: 'Twitter', link: '#', color: 'hover:text-blue-400' },
-    { icon: Linkedin, name: 'LinkedIn', link: '#', color: 'hover:text-blue-700' }
+    { icon: Facebook, name: 'Facebook', link: 'https://www.facebook.com/share/1C7yATHkKe/', color: 'hover:text-blue-600' },
+    { icon: Instagram, name: 'Instagram', link: 'https://www.instagram.com/omar.mohamed9653', color: 'hover:text-pink-600' },
+    { icon: Facebook, name: 'Facebook', link: 'https://www.facebook.com/omar.mohamed.khalaf.263683', color: 'hover:text-blue-400' },
   ]
 
   return (

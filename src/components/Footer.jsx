@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from 'lucide-react'
-import logo from 'src/assets/logo.jpeg'; // عدّل المسار حسب مكان الملف
+import logo from '../assets/logo.jpeg'; // عدّل المسار حسب مكان الملف
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()

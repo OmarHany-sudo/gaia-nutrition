@@ -27,16 +27,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* معلومات الشركة */}
-          <div className="space-y-4">
+  <div className="space-y-4">
             <div className="flex items-center space-x-2 space-x-reverse">
-  <img
-    src={logo}
-    alt="Gaia Nutrition Logo"
-    className="w-10 h-10 rounded-full object-cover"
-  />
-  <span className="text-xl font-arabic-heading">Gaia Nutrition</span>
-</div>
-
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-lg">G</span>
+              </div>
+              <span className="text-xl font-arabic-heading">Gaia Nutrition</span>
+            </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               منصة متخصصة لتغيير نمط الحياة الصحي من خلال التغذية المستدامة والمتابعة المهنية مع د/ عمر محمد خلف.
             </p>

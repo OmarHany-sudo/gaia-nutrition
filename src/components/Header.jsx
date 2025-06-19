@@ -24,13 +24,16 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 space-x-reverse">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">G</span>
-            </div>
-            <span className="text-xl font-arabic-heading text-foreground">
-              Gaia Nutrition
-            </span>
-          </Link>
+  <img
+    src={require('../../assets/logo.jpeg')}
+    alt="Gaia Nutrition Logo"
+    className="w-10 h-10 rounded-full object-cover"
+  />
+  <span className="text-xl font-arabic-heading text-foreground">
+    Gaia Nutrition
+  </span>
+</Link>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8 space-x-reverse">

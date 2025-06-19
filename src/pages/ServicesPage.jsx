@@ -75,7 +75,6 @@ const ServicesPage = () => {
       ]
     }
   ]
-}
 
   const process = [
     {

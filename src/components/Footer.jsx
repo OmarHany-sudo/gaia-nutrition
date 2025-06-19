@@ -117,11 +117,20 @@ const Footer = () => {
         </div>
 
         {/* خط الفصل وحقوق النشر */}
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-sm text-gray-200">
-            © {currentYear} Gaia Nutrition. جميع الحقوق محفوظة.
-          </p>
-        </div>
+<div className="border-t border-gray-700 mt-8 pt-8 text-center">
+  <p className="text-sm text-gray-200">
+    © {currentYear} Gaia Nutrition. All rights reserved. <br />
+    Website created by{" "}
+    <a
+      href="https://omarhany.netlify.app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-400 hover:underline"
+    >
+      Eng. Omar Hany
+    </a>
+  </p>
+</div>
       </div>
     </footer>
   );

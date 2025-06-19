@@ -108,7 +108,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3 space-x-reverse">
                 <Clock className="w-4 h-4 text-primary" />
                 <div className="text-sm text-gray-200">
-                  <div>السبت - الخميس: 9:00 ص - 6:00 م</div>
+                  <div>السبت - الخميس: 9:00 ص - 9:00 م</div>
                   <div>الجمعة: مغلق</div>
                 </div>
               </div>

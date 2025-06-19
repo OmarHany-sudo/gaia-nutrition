@@ -10,8 +10,6 @@ const ServicesPage = () => {
     {
       title: 'السمنة والنحافة',
       description: 'متابعة متخصصة لحالات السمنة والنحافة للوصول للوزن المثالي بطرق صحية.',
-      price: '300 جنيه',
-      duration: '60 دقيقة',
       icon: Users,
       features: [
         'تقييم شامل للحالة الصحية',
@@ -24,8 +22,6 @@ const ServicesPage = () => {
     {
       title: 'تغذية الأطفال',
       description: 'خطط تغذية متوازنة للأطفال في مختلف المراحل العمرية.',
-      price: '400 جنيه',
-      duration: '45 دقيقة',
       icon: Heart,
       features: [
         'تقييم النمو والتطور',
@@ -37,8 +33,6 @@ const ServicesPage = () => {
     {
       title: 'تغذية الرياضيين',
       description: 'برامج غذائية مصممة خصيصاً للرياضيين لتحسين الأداء والاستشفاء.',
-      price: '200 جنيه',
-      duration: '30 دقيقة',
       icon: Star,
       features: [
         'تحليل الاحتياجات الرياضية',
@@ -50,8 +44,6 @@ const ServicesPage = () => {
     {
       title: 'تغذية مرضى السكر',
       description: 'إدارة التغذية لمرضى السكر للمساعدة في التحكم بمستويات السكر في الدم.',
-      price: '350 جنيه',
-      duration: '45 دقيقة',
       icon: CheckCircle,
       features: [
         'خطط غذائية لمرضى السكر',
@@ -63,8 +55,6 @@ const ServicesPage = () => {
     {
       title: 'تغذية الحوامل',
       description: 'نصائح وخطط غذائية متكاملة للحوامل لضمان صحة الأم والجنين.',
-      price: '350 جنيه',
-      duration: '45 دقيقة',
       icon: Heart,
       features: [
         'تغذية ما قبل الولادة',
@@ -76,8 +66,6 @@ const ServicesPage = () => {
     {
       title: 'تغذية كبار السن',
       description: 'خطط تغذية مخصصة لكبار السن لدعم الصحة والحيوية.',
-      price: '350 جنيه',
-      duration: '45 دقيقة',
       icon: Users,
       features: [
         'تقييم الاحتياجات الخاصة',
@@ -87,6 +75,7 @@ const ServicesPage = () => {
       ]
     }
   ]
+}
 
   const process = [
     {

@@ -23,8 +23,10 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 space-x-reverse">
-  <img src="assets/logo.webp" alt="Gaia Nutrition" className="w-10 h-10 rounded-full" />
+          import logo from '../assets/logo.webp'; // لو انت في فولدر component جوه src
+
+<Link to="/" className="flex items-center space-x-2 space-x-reverse">
+  <img src={logo} alt="Gaia Nutrition" className="w-10 h-10 rounded-full" />
   <span className="text-xl font-arabic-heading text-foreground">
     Gaia Nutrition
   </span>

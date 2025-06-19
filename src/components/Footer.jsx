@@ -45,19 +45,20 @@ const Footer = () => {
   <p className="text-sm text-gray-100 leading-relaxed">
     منصة متخصصة لتغيير نمط الحياة الصحي من خلال التغذية المستدامة والمتابعة المهنية مع د/ عمر محمد خلف.
   </p>
+
+  {/* أيقونات التواصل الاجتماعي */}
+  <div className="flex space-x-4 space-x-reverse">
+    <a href="#" className="text-gray-200 hover:text-white transition-colors">
+      <Facebook className="w-5 h-5" />
+    </a>
+    <a href="#" className="text-gray-200 hover:text-white transition-colors">
+      <Instagram className="w-5 h-5" />
+    </a>
+    <a href="#" className="text-gray-200 hover:text-white transition-colors">
+      <Twitter className="w-5 h-5" />
+    </a>
+  </div>
 </div>
-            <div className="flex space-x-4 space-x-reverse">
-              <a href="#" className="text-gray-200 hover:text-white transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-200 hover:text-white transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-200 hover:text-white transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
 
           {/* روابط سريعة */}
           <div className="space-y-4">

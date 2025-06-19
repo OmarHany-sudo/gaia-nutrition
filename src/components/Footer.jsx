@@ -29,10 +29,17 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2 space-x-reverse">
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">G</span>
-              </div>
-              <span className="text-xl font-arabic-heading text-white">Gaia Nutrition</span>
-            </div>
+                        {/* Logo */}
+<Link to="/" className="flex items-center space-x-2 space-x-reverse">
+  <img
+    src="/assets/logo.jpeg"
+    alt="Gaia Nutrition"
+    className="w-10 h-10 rounded-full"
+  />
+  <span className="text-xl font-arabic-heading text-foreground">
+    Gaia Nutrition
+  </span>
+</Link>
             <p className="text-sm text-gray-100 leading-relaxed">
               منصة متخصصة لتغيير نمط الحياة الصحي من خلال التغذية المستدامة والمتابعة المهنية مع د/ عمر محمد خلف.
             </p>

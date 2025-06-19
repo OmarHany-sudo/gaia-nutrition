@@ -11,4 +11,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  assetsInclude: ['**/*.jpeg', '**/*.jpg', '**/*.svg'], // أضف هذا ليشمل الصور
 })

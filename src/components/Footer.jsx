@@ -26,23 +26,26 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* معلومات الشركة */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2 space-x-reverse">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                        {/* Logo */}
-<Link to="/" className="flex items-center space-x-2 space-x-reverse">
-  <img
-    src="/assets/logo.jpeg"
-    alt="Gaia Nutrition"
-    className="w-10 h-10 rounded-full"
-  />
-  <span className="text-xl font-arabic-heading text-foreground">
-    Gaia Nutrition
-  </span>
-</Link>
-            <p className="text-sm text-gray-100 leading-relaxed">
-              منصة متخصصة لتغيير نمط الحياة الصحي من خلال التغذية المستدامة والمتابعة المهنية مع د/ عمر محمد خلف.
-            </p>
+<div className="space-y-4">
+  {/* Logo & اسم الشركة */}
+  <Link to="/" className="flex items-center space-x-2 space-x-reverse">
+    <div className="w-10 h-10 rounded-full overflow-hidden">
+      <img
+        src="/assets/logo.jpeg"
+        alt="Gaia Nutrition"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <span className="text-xl font-arabic-heading text-foreground">
+      Gaia Nutrition
+    </span>
+  </Link>
+
+  {/* وصف الشركة */}
+  <p className="text-sm text-gray-100 leading-relaxed">
+    منصة متخصصة لتغيير نمط الحياة الصحي من خلال التغذية المستدامة والمتابعة المهنية مع د/ عمر محمد خلف.
+  </p>
+</div>
             <div className="flex space-x-4 space-x-reverse">
               <a href="#" className="text-gray-200 hover:text-white transition-colors">
                 <Facebook className="w-5 h-5" />

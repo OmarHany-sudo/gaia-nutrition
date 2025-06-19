@@ -22,10 +22,11 @@ const Header = () => {
     <header className="bg-white/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
+
           {/* Logo */}
 <Link to="/" className="flex items-center space-x-2 space-x-reverse">
   <img
-    src="/assets/logo.webp"
+    src="/assets/logo.jpeg"
     alt="Gaia Nutrition"
     className="w-10 h-10 rounded-full"
   />

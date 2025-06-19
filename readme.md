@@ -1,4 +1,4 @@
-# Gaia Nutrition 🍃
+  # Gaia Nutrition 🍃
 
 A clean and modern nutrition-focused website built with love and simplicity 💚  
 Designed to provide a healthy user experience with responsive layouts and clean UI.

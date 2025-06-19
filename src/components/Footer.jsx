@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from 'lucide-react'
+import logo from '../../assets/logo.jpeg'; // عدّل المسار حسب مكان الملف
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -28,11 +29,14 @@ const Footer = () => {
           {/* معلومات الشركة */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2 space-x-reverse">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">G</span>
-              </div>
-              <span className="text-xl font-arabic-heading">Gaia Nutrition</span>
-            </div>
+  <img
+    src={logo}
+    alt="Gaia Nutrition Logo"
+    className="w-10 h-10 rounded-full object-cover"
+  />
+  <span className="text-xl font-arabic-heading">Gaia Nutrition</span>
+</div>
+
             <p className="text-sm text-muted-foreground leading-relaxed">
               منصة متخصصة لتغيير نمط الحياة الصحي من خلال التغذية المستدامة والمتابعة المهنية مع د/ عمر محمد خلف.
             </p>

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Menu, X, Phone, Calendar } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import logo from '../../assets/logo.jpeg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -24,11 +25,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 space-x-reverse">
-  <img
-    src={require('../../assets/logo.jpeg')}
-    alt="Gaia Nutrition Logo"
-    className="w-10 h-10 rounded-full object-cover"
-  />
+  <img src={logo} alt="Gaia Nutrition Logo" className="w-10 h-10 rounded-full object-cover" />
   <span className="text-xl font-arabic-heading text-foreground">
     Gaia Nutrition
   </span>

@@ -1,73 +1,73 @@
-# Gaia Nutrition 🍃
+# React + TypeScript + Vite
 
-A clean and modern nutrition-focused website built with love and simplicity 💚  
-Designed to provide a healthy user experience with responsive layouts and clean UI.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Table of Contents
+Currently, two official plugins are available:
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [How to Use](#how-to-use)
-- [Author](#author)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
+## React Compiler
 
-## Overview
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### Screenshot
+## Expanding the ESLint configuration
 
-![Screenshot](./public/assets/gaia-nutrition-preview.webp)
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-### Links
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-- **Live Demo**: [https://gaia-nutrition.netlify.app](https://gaia-nutrition.netlify.app)
-- **GitHub Repo**: [https://github.com/OmarHany-sudo/gaia-nutrition](https://github.com/OmarHany-sudo/gaia-nutrition)
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
----
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-## Features
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-- 🌿 Modern and minimalistic nutrition website
-- 📱 Fully responsive design for all screen sizes
-- ⚡ Fast loading with optimized assets
-- 🧘 Clean and user-friendly interface
-- 🌍 Ready to deploy on Netlify or Vercel
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
----
-
-## Tech Stack
-
-- **HTML5** – Semantic and accessible structure  
-- **CSS3** – Custom styling and layout  
-- **JavaScript (Vanilla)** – Interactive behaviors  
-- **Netlify** – For instant deployment and hosting  
-
----
-
-## How to Use
-
-1. **Clone** the repository:
-
-   ```bash
-   git clone https://github.com/OmarHany-sudo/gaia-nutrition.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd gaia-nutrition
-   ```
-
-3. You can open `index.html` directly in your browser or use a local server like Live Server in VS Code.
-
----
-
-## Author
-
-- 👨‍💻 **Website** – [Omar Hany](https://omarhany.netlify.app)
-- 💼 **LinkedIn** – [@omar-hany-l850](https://www.linkedin.com/in/omar-hany-l850)
-- 📘 **Facebook** – [@Omar.Hany.850](https://www.facebook.com/Omar.Hany.850)
-- 📸 **Instagram** – [@omar.hany.850](https://www.instagram.com/omar.hany.850)
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
